@@ -11,7 +11,6 @@
 .lightbox-modal img {
   max-width: 95vw;
   max-height: 95vh;
-  object-fit: contain;
 }
 
 .gallery-img {

@@ -10,18 +10,29 @@
     </div>
     <div class="row">
       {{- $images := .Resources.ByType "image" -}}
-      {{ range $image := $images }}
-        {{- /* if width is greater than height*/ -}}
-        {{- if gt .Width .Height -}}
-          {{- $image = .Fill (printf "%dx%d" .Height .Height) -}}
-        {{- else -}}
-        {{- /* if height is greater than width*/ -}}
-          {{- $image = .Fill (printf "%dx%d" .Width .Width) -}}
-        {{- end -}}
-        <div class="col-6 col-md-4 col-xl-4 pb-3 px-2">
-          <img src="{{ $image.RelPermalink }}" alt="Gallery Image" class="img-fluid" width="{{ $image.Width }}" height="{{ $image.Height }}">
-      </div>
-      {{ end }}
+{{ range $img := $images }}
+
+  {{ $full := $img }} <!-- original full-size -->
+  {{ $thumb := $img }}
+
+  {{ if gt $img.Width $img.Height }}
+    {{ $thumb = $img.Fill (printf "%dx%d" $img.Height $img.Height) }}
+  {{ else }}
+    {{ $thumb = $img.Fill (printf "%dx%d" $img.Width $img.Width) }}
+  {{ end }}
+
+  <div class="col-6 col-md-4 col-xl-4 pb-3 px-2">
+    <img
+      src="{{ $thumb.RelPermalink }}"
+      data-full="{{ $full.RelPermalink }}"
+      alt="Gallery Image"
+      class="img-fluid gallery-img"
+      width="{{ $thumb.Width }}"
+      height="{{ $thumb.Height }}"
+    >
+  </div>
+
+{{ end }}
     </div>
   </div>
 </section>
