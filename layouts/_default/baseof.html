@@ -2,7 +2,7 @@
 <html lang="{{ .Lang }}">
 <head>
  {{ partial "head" . }}
-<script src="/js/lightbox.js"></script>
+<link rel="stylesheet" href="{{ "css/lightbox.css" | relURL }}">
 </head>
 <body>
   <header>
@@ -18,5 +18,6 @@
   <div id="lightbox" class="lightbox-modal" onclick="this.style.display='none'">
     <img id="lightbox-img" src="" alt="">
   </div>
+  <script src="{{ "js/lightbox.js" | relURL }}"></script>
 </body>
 </html>
