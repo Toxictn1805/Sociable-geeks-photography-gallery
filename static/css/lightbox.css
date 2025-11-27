@@ -1,3 +1,7 @@
+body{
+  background-color: #ecd8b2;
+}
+
 .lightbox-modal {
   display: none;
   position: fixed;
@@ -14,5 +18,14 @@
 }
 
 .gallery-img {
-  cursor: zoom-in;
+  cursor: crosshair;
+}
+
+.site-logo {
+  width: 20%;       /* or any size */
+  max-width: 200px; /* optional cap */
+  height: auto;     /* keeps proportions */
+  display: block;   /* make the image a block element */
+  margin-left: auto; /* auto margins on the left */
+  margin-right: auto; /* auto margins on the right */
 }

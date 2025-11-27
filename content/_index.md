@@ -1,35 +1,22 @@
 ---
-title: "Home"
-date: 2021-11-16T23:04:08+11:00
+title: "About"
 draft: false
 menu: main
 weight: 10
-heading: My first Bootstrap & Hugo Site
-btn1:
-  text: Bootstrap 5 Docs
-  url: https://getbootstrap.com/
-btn2:
-  text: Hugo Docs
-  url: https://gohugo.io/
-cardsTitle: Our Services
-cards:
-- title: Card 1 Title
-  img: /img/placeholder1.jpg
-  text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto modi placeat corrupti tempora quod quidem praesentium impedit. Rem, sapiente eius?
-  btn:
-    text: Button 1 text
-    url: "#"
-- title: Card 2 Title
-  img: /img/placeholder2.jpg
-  text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto modi placeat corrupti tempora quod quidem praesentium impedit. Rem, sapiente eius?
-  btn:
-    text: Button 2 text
-    url: "#"
-- title: Card 3 Title
-  img: /img/placeholder3.jpg
-  text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto modi placeat corrupti tempora quod quidem praesentium impedit. Rem, sapiente eius?
-  btn:
-    text: Button 3 text
-    url: "#"
 ---
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quod autem ullam illum dicta perferendis, quaerat dolore sunt, soluta incidunt, repellat aspernatur maxime. Dignissimos quibusdam voluptas, ipsam iusto, quo maxime earum officiis optio consequatur fugit voluptatem nobis error sed natus, voluptatum eveniet expedita aliquam id reiciendis molestiae necessitatibus accusantium impedit?
+
+Hello! I'm a photographer based in London, UK, passionate about capturing life's most precious moments. Whether it's the energy of a vibrant event, the unique personality in a headshot, or the artistry of a model portfolio, I'm dedicated to providing high-quality, professional photography services.
+
+### __My services include:__
+
+## Event Photography: 
+From intimate gatherings to large-scale celebrations, I'll capture the atmosphere and emotion of your special event.
+
+## Headshots:
+Make a lasting impression with professional headshots that showcase your personality and expertise.
+
+## Model Photography: 
+Let's collaborate to create stunning images that highlight your model's unique beauty and style.
+
+I use a blend of traditional and modern techniques to deliver images that are both timeless and contemporary. My goal is to create photographs that you'll cherish for years to come. Contact me today to discuss your photography needs and let's create something amazing together!
+

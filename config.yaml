@@ -1,18 +1,23 @@
 baseURL: ""
 # Disable taxonomy pages (disables categories and tags folders)
+params:
+  logo: "/img/logo.png"
 disableKinds:
 - taxonomy
 - taxonomyTerm
 # for xml output
-languageCode: "en-au"
+languageCode: "en-uk"
 # for website
-defaultContentLanguage: "en-au"
+defaultContentLanguage: "en-uk"
 languages:
   en-au:
     weight: 1
-title: My New Hugo Site
+  en-uk:
+    weight: 2
+ 
+title: 
 # alternate copyright company text
-copyright: Web Design Inc.
+copyright: SociableGeeks Photography
 # controls number of pages displayed on list pages
 paginate: 5
 # controls the summary length on list pages
@@ -21,13 +26,18 @@ summaryLength: 7
 # menu links via config file
 menu:
   main:
-  - name: Github
-    url: http://www.github.com/
-    weight: 90
+  - name: About
+    url: /index.html
+    weight: 19
+
+  - name: Instagram
+    url: http://www.instagram.com/sociablegeeksphotography
+    weight: 20
     params:
       blank: true
-  - name: Google
-    url: http://www.google.com/
-    weight: 100
+  
+  - name: Facebook
+    url: https://www.facebook.com/sociablegeeksphotography
+    weight: 21
     params:
       blank: true
