@@ -10,10 +10,8 @@ languageCode: "en-uk"
 # for website
 defaultContentLanguage: "en-uk"
 languages:
-  en-au:
-    weight: 1
   en-uk:
-    weight: 2
+    weight: 1
  
 title: 
 # alternate copyright company text
@@ -28,16 +26,16 @@ menu:
   main:
   - name: About
     url: /index.html
-    weight: 19
+    weight: 20
 
   - name: Instagram
     url: http://www.instagram.com/sociablegeeksphotography
-    weight: 20
+    weight: 21
     params:
       blank: true
   
   - name: Facebook
     url: https://www.facebook.com/sociablegeeksphotography
-    weight: 21
+    weight: 22
     params:
       blank: true
