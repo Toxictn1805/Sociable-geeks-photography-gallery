@@ -28,7 +28,7 @@ menu:
     url: /index.html
     weight: 20
 
-  - name: Instagram
+  - name: "Instagram"
     url: http://www.instagram.com/sociablegeeksphotography
     weight: 21
     params:
