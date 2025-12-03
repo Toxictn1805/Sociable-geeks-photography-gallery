@@ -1,0 +1,39 @@
+body{
+  background-color: #fffbf3 !important; 
+  color: #000000 !important;
+}
+
+a:link,
+a:visited {
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #9b9a9a !important;
+  text-decoration: underline !important;
+}
+
+.navbar-nav {
+  margin: 0 auto; /* centres the nav list */
+  background-color: #FFFBF3;
+}
+
+.navbar {
+  text-align: center;
+  background-color: #FFFBF3;
+}
+
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+  background-color: #FFFBF3;
+}
+
+.navbar.navbar-expand-md.navbar-light.bg-body {
+  background-color: #FFFBF3 !important;
+}
+
+.container-fluid{
+  background-color: #FFFBF3;
+}
