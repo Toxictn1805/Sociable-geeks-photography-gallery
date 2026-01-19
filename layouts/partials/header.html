@@ -1,18 +1,42 @@
 <nav class="navbar navbar-expand-md navbar-light bg-body">
   <div class="container-fluid">
+    <!-- SITE TITLE: Displays your website name as a brand link -->
     <a class="navbar-brand" href="#">{{ .Site.Title }}</a>
+
+    <!-- MOBILE TOGGLER: The 'hamburger' icon that appears on small screens -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- COLLAPSIBLE CONTENT: Everything inside here will hide behind the burger menu on mobile -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <!-- NAVIGATION LIST: This <ul> holds all your individual links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <!-- LOOP 1: Standard Text Links from [menu.main] in config.yaml -->
         {{ range .Site.Menus.main }}
         <li class="nav-item">
           <a class="nav-link{{ if $.IsMenuCurrent "main" . }} active" aria-current="page{{ end }}" 
-          href="{{ .URL }}" {{ if eq .Params.blank true }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
+             href="{{ .URL }}" 
+             {{ if eq .Params.blank true }} target="_blank" rel="noopener"{{ end }}>
+             {{ .Name }}
+          </a>
         </li>
         {{ end }}
+
+        <!-- LOOP 2: Social Icons from [params.social] in config.yaml -->
+        <!-- We put these inside the same <ul> so they align horizontally with the text links -->
+        {{ range .Site.Params.social }}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}">
+            <!-- The 'icon' variable pulls 'fa-brands fa-instagram' from your config -->
+            <i class="{{ .icon }}"></i>
+          </a>
+        </li>
+        {{ end }}
+
       </ul>
     </div>
   </div>

@@ -1,7 +1,5 @@
 baseURL: ""
 # Disable taxonomy pages (disables categories and tags folders)
-params:
-  logo: "/img/logo.png"
 disableKinds:
 - taxonomy
 - taxonomyTerm
@@ -28,14 +26,21 @@ menu:
     url: /index.html
     weight: 20
 
-  - name: "Instagram"
-    url: http://www.instagram.com/sociablegeeksphotography
-    weight: 21
-    params:
-      blank: true
-  
-  - name: Facebook
-    url: https://www.facebook.com/sociablegeeksphotography
-    weight: 22
-    params:
-      blank: true
+# 👇 ALL parameters are now combined in this single block 👇
+params:
+  # This is the logo path your theme expects
+  logo: "/img/logo.png"
+
+  # These are your social media icons
+  social:
+    - name: "Instagram"
+      icon: "fa-brands fa-instagram"
+      url: "https://instagram.com/sociablegeeksphotography"
+    
+    - name: "Facebook"
+      icon: "fa-brands fa-facebook"
+      url: "https://www.facebook.com/sociablegeeksphotography"
+
+    - name: "Mail"
+      icon: "fa-regular fa-envelope"
+      url: "mailto:sociablegeeksphotography@gmail.com"
